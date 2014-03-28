@@ -1,0 +1,7 @@
+function[t,s]=senoidal(f_m,f,phi,t_ini,t_fin,a)
+	t_n=1/f_m;
+	t=t_ini:t_n:t_fin-t_n;
+	s=a*sin(2*pi*f*t+phi);
+	stem(t,s);
+    %plot(t,s)
+end
