@@ -36,12 +36,12 @@ title('Suma (S + r)');
 
 %	Parte A (Muestros los datos originales).
 
-display("______Datos (Parte A)_____")
-display("Potencia señal Original (Ps)_")
+disp('____Datos (Parte A)_____')
+disp('Potencia señal Original (Ps)_')
 Ps
-display("Potencia de Ruido (Pr)_")
+disp('Potencia de Ruido (Pr)_')
 Pr
-display("Relación Señal-Ruido (SRN)_")
+display('Relación Señal-Ruido (SRN)_')
 SNR
 
 %	Parte B (Multiplico la señal de ruido por una constante).
@@ -68,13 +68,14 @@ subplot(1,3,3);
 plot(t,gb);
 title('Suma (g = s + a.r)');
 
-display("______Datos (Parte B)_____")
-display("Potencia señal Original (Ps)_")
+disp('______Datos (Parte B)_____')
+disp('Potencia señal Original (Ps)_')
 Ps_b
-display("Potencia de Ruido Mod. (Pr)_")
+display('Potencia de Ruido Mod. (Pr)_')
 Pr_b
-display("Relación Señal-Ruido (SRN)_")
+disp('Relación Señal-Ruido (SRN)_')
 SNR_b
+
 
 %	Parte C (Hayar para una SNR  de 0db).
 
@@ -118,10 +119,10 @@ title('Suma (g = s + a_cero.r)');
 
 %------------------------------------
 
-display("______Datos (Parte C)_____")
-display("Potencia señal Original (Ps)_")
+disp('______Datos (Parte C)_____')
+disp('Potencia señal Original (Ps)_')
 Ps_c
-display("Potencia de Ruido (Pr)_")
+disp('Potencia de Ruido (Pr)_')
 Pr_c
-display("Relación Señal-Ruido (SRN)_")
+disp('Relación Señal-Ruido (SRN)_')
 SNR_c
