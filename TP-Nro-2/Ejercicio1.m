@@ -1,11 +1,11 @@
-function funciones()
+function TP2Ejercicio1()
     %Generamos una senoidal
     f_m=100;
     f=20;
     phi=0;
     t_ini=0;
     t_fin=1;
-    a=1
+    a=1;
     
     [t1,s1]=senoidal(f_m,f,phi,t_ini,t_fin,a);
     
@@ -24,7 +24,7 @@ function funciones()
     
     print('Media Sinusoidal');
     med1=mean(s1);
-    plot(med1);
+    print(med1);
     print('Media Cuadrada');
     med2=mean(s2);
     print(med2);
@@ -45,12 +45,12 @@ function funciones()
     v_min=min(s1);
     print(v_min);
     
-    %Amplitud
+    %Amplitud / Equivalente a Norma p con p=infinito
     print('Valor Minimo Sinusoidal');
     v_max=max(abs(s1));
     print(v_max);
     
-    %Energía 
+    %Energía / La energía elevada al cuadrado equivale a la Norma p con p=2
     e1=energia(s1);
     print('Energía Sinusoidal')
     print(e1);
@@ -68,4 +68,8 @@ function funciones()
     %Raíz del valor cuadratico medio
     rms1=sqrt(pot1);
     print('Raíz del valor cuadratico medio Sinusoidal');
-    print(rms);
+    print(rms1);
+end
+    
+    
+
