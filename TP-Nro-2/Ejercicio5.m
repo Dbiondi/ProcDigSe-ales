@@ -30,3 +30,26 @@ function [t,s]=TP2Ejercicio5(op)
         end
     end
 end
+
+function [y]=escalon(t)    
+n=length(t);
+    for i=1:n
+        if t(i)<0
+            y(i)=-1;
+        else
+            y(i)=1;
+        end
+    end
+end
+
+function [aprox]=aprox_tres(t) 
+    for i = 1 : length(t)
+		aprox(i) = (45/16)*t(i) - (35/16)*t(i)^3;
+    end
+end
+    
+function [aprox] = aprox_cinco(t, a1, a3, a5)
+	for i = 1 : length(t)
+		aprox(i) = a1 * (sqrt(3/2)*t(i)) + a3 * (sqrt(7/2)*((5/2)*t(i)^3 - (3/2)*t(i))) + a5 * (sqrt(11/128) * (15*t(i) - 70*t(i)^3 + 63*t(i)^5));
+    end
+end   
