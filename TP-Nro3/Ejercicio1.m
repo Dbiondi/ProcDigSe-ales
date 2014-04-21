@@ -87,7 +87,7 @@ fsp=fftp(s);
 subplot(5,2,10);
 plot(fsp);
 
-%Conclusion: La mitad del rango se modifica de 500 a aprox 350 y se disminuye la amplitud maxima
+%Conclusion: La mitad del rango se modifica de 500 a aprox 355 y se disminuye la amplitud maxima
 
 end
 
