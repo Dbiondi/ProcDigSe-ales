@@ -35,7 +35,7 @@ else
 end
 
 %Primera Modificacion (s1+s2+4)
-s=sin(2*pi*10*t) + 4*sin(2*pi*20*t)+4;
+s=sin(2*pi*10*t) + 4*sin(2*pi*20*t);
 
 subplot(5,2,3);
 plot(s);
@@ -44,9 +44,11 @@ fsp=fftp(s);
 subplot(5,2,4);
 plot(fsp);
 
+%Conclusion: En la mitad del rango se modifica la amplitud siendo esta 1000 veces el valor de la traslación de la funcion
+
 %Segunda Modificacion (f1=10 f2=11)
 
-s=sin(2*pi*10*t) + 4*sin(2*pi*11*t)+4;
+s=sin(2*pi*10*t) + 4*sin(2*pi*11*t);
 
 subplot(5,2,5);
 plot(s);
@@ -55,9 +57,11 @@ fsp=fftp(s);
 subplot(5,2,6);
 plot(fsp);
 
+%Conclusion: Se mantiene la amplitud máxima de 2000, pero en valores más próximos a la mitad del rango
+
 %Tercera Modificacion (f1=10 f2=10.5)
 
-s=sin(2*pi*10*t) + 4*sin(2*pi*10.5*t)+4;
+s=sin(2*pi*10*t) + 4*sin(2*pi*10.5*t);
 
 subplot(5,2,7);
 plot(s);
@@ -65,6 +69,8 @@ plot(s);
 fsp=fftp(s);
 subplot(5,2,8);
 plot(fsp);
+
+%Conclusion: Disminuye la amplitud maxima, y esta se da en valores más próximos a la mitad del rango
 
 %Cuarta Modificacion (Intervalo de tiempo [0...0.72])
 
@@ -80,6 +86,8 @@ plot(s);
 fsp=fftp(s);
 subplot(5,2,10);
 plot(fsp);
+
+%Conclusion: La mitad del rango se modifica de 500 a aprox 350 y se disminuye la amplitud maxima
 
 end
 
